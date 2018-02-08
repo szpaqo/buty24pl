@@ -1,20 +1,90 @@
-.container-main-page
+.container
  {
-     height: 40px;
-     background-color: royalblue;
+    width: 100%;
+    background-color: #404040;
+    font-family: 'Lato', sans-serif;
  }
-.container-column1
+.header
 {
-    height: 40px;
-    background-color: beige  !important;
+    color: white !important;
+    margin-top: 20px;
+    font-weight: 900;
 }
-.container-column2
+.menu
 {
-    height: 40px;
-    background-color: fuchsia !important;
+    width: 80%;
+    background-color: #303030;
+    margin-top: 20px;
+    color: #ffffff;
+    padding: 10px;
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
 }
-.container-column3
+.option
 {
-    height: 40px;
-    background-color: salmon !important;
+    float:left;
+    min-width: 50px;
+    height: 25px;
+    font-size: 18px;
+    padding: 10px;
+    border-right: 2px dotted #444444;
+
+}
+.option:hover
+{
+    background-color: #000000;
+    cursor: pointer;
+}
+.slider
+{
+    width: 80%;
+    background-color: #128870;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    height: 170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sliderL
+{
+    float:left;
+    padding: 20px;
+    width: 170px;
+}
+#sliderR
+{
+    float:left;
+    text-align: center;
+    width: 60%;
+    padding: 20px;
+    font-size 20px;
+}
+.body
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+.link1
+{
+    width: 30%;
+    background-color: salmon;
+    float: left;
+    text-align: center;
+}
+.link2
+{
+    width: 70%;
+    background-color: silver;
+    float: left;
+    text-align: center;
+}
+.footer
+{
+    clear: both;
+    text-align: center;
 }
