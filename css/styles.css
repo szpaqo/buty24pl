@@ -1,25 +1,59 @@
+body
+{
+    background-color: #404040;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin: 0 !important;
+}
+
 .container
  {
     width: 100%;
     background-color: #404040;
-    font-family: 'Lato', sans-serif;
+
  }
+.login
+{
+    width: 95%;
+    font-size: 12px;
+    padding: 2px;
+    text-align: right;
+    color: red;
+    margin-top: 5px ;
+}
 .header
 {
-    color: white !important;
-    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 1px;
     font-weight: 900;
 }
-.menu
+.logo
 {
-    width: 80%;
-    background-color: #303030;
-    margin-top: 20px;
-    color: #ffffff;
-    padding: 10px;
-    opacity: 0.8;
+    width: 450px;
+    font-size: 48px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+}
+
+.nav
+{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #303030;
+    text-align: center;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+.sticky
+{
+    width: 100%;
+    position:fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
 }
 .option
 {
@@ -29,7 +63,6 @@
     font-size: 18px;
     padding: 10px;
     border-right: 2px dotted #444444;
-
 }
 .option:hover
 {
@@ -48,43 +81,149 @@
     margin-left: auto;
     margin-right: auto;
 }
-#sliderL
+
+.content
 {
-    float:left;
-    padding: 20px;
-    width: 170px;
-}
-#sliderR
-{
-    float:left;
-    text-align: center;
-    width: 60%;
-    padding: 20px;
-    font-size 20px;
-}
-.body
-{
-    width: 80%;
+    width: 1000px;
+    padding: 40px;
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
 }
-.link1
+
+.socials
 {
-    width: 30%;
-    background-color: salmon;
+    width: 100%;
+    background-color: #292929;
     float: left;
     text-align: center;
 }
-.link2
+.socialdivs
 {
-    width: 70%;
-    background-color: silver;
-    float: left;
-    text-align: center;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.fb
+ {
+     width: 250px;
+     height: 155px;
+     float:left;
+ }
+.fb:hover
+{
+    background-color: #4668b3;
+}
+.yt
+{
+    width: 250px;
+    height: 155px;
+    float:left;
+}
+.yt:hover
+{
+    background-color: #d94348;
+}
+.tw
+{
+    width: 250px;
+    height: 155px;
+    float:left;
+}
+.tw:hover
+{
+    background-color: #3095d3;
+}
+.gplus
+{
+    width: 250px;
+    height: 155px;
+    float:left;
+}
+.gplus:hover
+{
+    background-color: #d95333;
 }
 .footer
 {
     clear: both;
     text-align: center;
+    background-color: #222222;
+    padding: 30px;
+}
+ol
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+}
+ol a
+{
+    color: #ffffff;
+    text-decoration: none;
+    display:block;
+}
+
+ol > li
+{
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-right: 1px dashed #000000;
+}
+ol > li:first-child
+{
+    border-left: 1px dashed #000000;
+}
+
+ol > li:hover
+{
+    background-color: rgba(124, 124, 124, 0.88);
+}
+
+ol > li:hover > a
+{
+    color: #000000;
+}
+
+ol > li> ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    display: none;
+}
+ol > li:hover > ul
+{
+    display: block;
+}
+ol > li > ul > li
+{
+    background-color: #7C7C7C;
+    position: relative;
+    z-index: 100;
+    border-top: 1px dashed #000000;
+}
+ol > li > ul > li:hover > a
+{
+    color: #000000;
+}
+.login
+{
+    float:left;
+}
+.login a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+.login a:hover
+{
+    color: #fcff00;
+    text-decoration: none;
 }

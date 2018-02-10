@@ -1,10 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Abaut us!</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buty24.pl - najlepsze buty na rynku!</title>
+    <meta name="description" content="Najlepsze marki u nas zawsze najtaniej!" />
+    <meta name="keywords" content="buty, buty męskie, buty damskie, buty zimowe, buty letnie, kozaki, klapki" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/default.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="css/component.css" />-->
+    <link rel="stylesheet" type="text/css" href="../css/fontello.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900&amp;subset=latin-ext" rel="stylesheet">
 </head>
+
 <body>
+<div class="container">
+    <div class="login">
+        <a href="../pages/login.html">Zaloguj się</a> | <a href="../pages/register.html">Rejestracja</a>
+    </div>
+    <div style="clear: both"></div>
+    <div class="header">
+
+        <div class="logo">
+            <img src="../images/logo.png" style="float: left;"/>
+            buty24.pl
+        </div>
+        <div style="clear: both"></div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="nav">
+            <ol>
+                <li><a href="../index.html">Strona główna</a></li>
+                <li><a href="../pages/man_shoes.html">Buty męskie</a>
+                    <ul>
+                        <li><a href="../pages/man_shoes/summer_shoes.html">Buty letnie</a></li>
+                        <li><a href="../pages/man_shoes/winter_shoes.html">Buty zimowe</a></li>
+                        <li><a href="../pages/man_shoes/slippers.html">Klapki</a></li>
+                        <li><a href="../pages/man_shoes/sales.html">Wyprzedaż</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/woman_shoes.html">Buty damskie</a>
+                    <ul>
+                        <li><a href="../pages/woman_shoes/summer_shoes.html">Buty letnie</a></li>
+                        <li><a href="../pages/woman_shoes/winter_shoes.html">Buty zimowe</a></li>
+                        <li><a href="../pages/woman_shoes/slippers.html">Klapki</a></li>
+                        <li><a href="../pages/woman_shoes/sales.html">Wyprzedaż</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/children_schoes.html">Buty dziecięce</a>
+                    <ul>
+                        <li><a href="../pages/children_shoes/summer_shoes.html">Buty letnie</a></li>
+                        <li><a href="../pages/children_shoes/winter_shoes.html">Buty zimowe</a></li>
+                        <li><a href="../pages/children_shoes/slippers.html">Klapki</a></li>
+                        <li><a href="../pages/children_shoes/sales.html">Wyprzedaż</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/abaut_us.html">O nas</a></li>
+                <li><a href="../pages/contact.html">Kontakt</a></li>
+            </ol>
+        </div>
+    </div>
+    <div class="slider">
+
+
+    </div>
+
+    <div class="content">
+        na tej stronie będą informacje o nas
+    </div>
+
+    <div class="socials">
+        <div class="socialdivs">
+            <a href="https://www.facebook.com/BONUSBGCOFFICIALPROFILE/">
+                <div class="fb">
+                    <i class="icon-facebook"></i>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=76hGw8S0Ang">
+                <div class="yt">
+                    <i class="icon-youtube-play"></i>
+                </div>
+            </a>
+            <a href="https://twitter.com/bonusbgc">
+                <div class="tw">
+                    <i class="icon-twitter"></i>
+                </div>
+            </a>
+            <a href="https://plus.google.com/?hl=pl">
+                <div class="gplus">
+                    <i class="icon-google"></i>
+                </div>
+            </a>
+            <div style="clear:both"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2018 Buty24a.pl Wszelkie prawa zastrzeżone. Korzystanie z serwisu oznacza akceptację Polityki Cookie
+    </div>
+</div>
+
+<script src="../jquery-3.3.1.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        var NavY = $('.nav').offset().top;
+
+        var stickyNav = function(){
+            var ScrollY = $(window).scrollTop();
+
+            if (ScrollY > NavY) {
+                $('.nav').addClass('sticky');
+            } else {
+                $('.nav').removeClass('sticky');
+            }
+        };
+
+        stickyNav();
+
+        $(window).scroll(function() {
+            stickyNav();
+        });
+    });
+</script>
 
 </body>
+
 </html>
